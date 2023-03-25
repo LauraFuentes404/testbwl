@@ -1,0 +1,117 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": "Lun",
+      "celsius": 17
+    },
+    {
+      "id": 2,
+      "day": "Mar",
+      "celsius": 24
+    },
+    {
+      "id": 3,
+      "day": "Mie",
+      "celsius": 4
+    },
+    {
+      "id": 4,
+      "day": "Jue",
+      "celsius": 17
+    },
+    {
+      "id": 5,
+      "day": "Vie",
+      "celsius": 35
+    },
+    {
+      "id": 6,
+      "day": "Sab",
+      "celsius": 32
+    },
+    {
+      "id": 7,
+      "day": "Dom",
+      "celsius": 25
+    }
+  ],
+  "actividades": [
+    {
+      "id": 1,
+      "actividad": "Terminar proyecto",
+      "fecha": "09 Ago",
+      "hora": "7:30"
+    },
+    {
+      "id": 6,
+      "actividad": "Ir al cine",
+      "fecha": "11 Ago",
+      "hora": "14:00"
+    },
+    {
+      "id": 7,
+      "actividad": "Revisar pendientes",
+      "fecha": "11 Ago",
+      "hora": "11:00"
+    },
+    {
+      "actividad": "Ver netflix",
+      "hora": "20:00",
+      "fecha": "13 Ago",
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ],
+  "ventas": [
+    {
+      "id": 1,
+      "tipo": "En venta",
+      "porcentaje": 30
+    },
+    {
+      "id": 2,
+      "tipo": "Servicios",
+      "porcentaje": 40
+    },
+    {
+      "id": 3,
+      "tipo": "Trabajos",
+      "porcentaje": 30
+    }
+  ],
+  "tarjetas": [
+    {
+      "id": 2,
+      "empresa": "visa",
+      "numTarjeta": "4000 1234 5492 9000",
+      "fecha": "02/21"
+    },
+    {
+      "id": 3,
+      "empresa": "amex",
+      "numTarjeta": "3700 1234 5492 9002",
+      "fecha": "03/22"
+    },
+    {
+      "id": 4,
+      "empresa": "amex",
+      "numTarjeta": "3400 1234 5492 9002",
+      "fecha": "03/22"
+    },
+    {
+      "id": 5,
+      "empresa": "mastercard",
+      "numTarjeta": "51000 1234 5492 9002",
+      "fecha": "03/22"
+    },
+    {
+      "empresa": "mastercard",
+      "numTarjeta": "5503 3993 9293 2123",
+      "fecha": "01/24",
+      "id": 6
+    }
+  ]
+}

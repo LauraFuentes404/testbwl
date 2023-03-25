@@ -1,0 +1,38 @@
+<div class="col-md-6">
+  <div class="panel-actividades">
+    <div class="actividades-info-title">Tarjetas de cr&eacute;dito</div>
+      <div class="scroll-tarjetas">
+        <div class="container tarjetas-group">
+            <div class="row text-center">
+              <div class="col-md-3" *ngFor="let tarjeta of tarjetas">
+                  <div class="credit-card">
+                      <input class="item-input" type="text"[(ngModel)]="tarjeta.empresa " #data="ngModel" name="numTarjeta"/>
+                      <i *ngIf="tarjeta.empresa=='visa'" class="fa fa-cc-visa fa-5x" aria-hidden="true"></i>
+                      <i *ngIf="tarjeta.empresa=='mastercard'" class="fa fa-cc-mastercard fa-5x" aria-hidden="true"></i>
+                      <i *ngIf="tarjeta.empresa=='amex'" class="fa fa-cc-amex fa-5x" aria-hidden="true"></i>
+                   
+                       <h2>
+                          <input class="item-input" type="text"[(ngModel)]="tarjeta.numTarjeta " #data="ngModel" name="numTarjeta"/>
+                       </h2>
+                       <span>                           
+                                               </span>
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <small>
+                                   <strong>Expiry date: </strong> <input   class="item-input"type="text"[(ngModel)]="tarjeta.fecha " #data="ngModel" name="fecha"/>
+                               </small>
+                               <button type="button" (click)="onUpdate(tarjeta)"> <span class="glyphicon glyphicon-upload"></span></button>
+                               <button type="button" (click)="deleteActividad(tarjeta.id)"> <span class="glyphicon glyphicon-remove"></span></button>                
+                           </div>
+                           
+                        </div>
+                        
+
+                       </div>
+                   
+              </div>
+            </div>
+        </div>
+    </div> 
+  <app-add-tarjeta></app-add-tarjeta>
+</div>

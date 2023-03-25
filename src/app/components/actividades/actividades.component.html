@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <div class="panel-actividades">
+    <div class="actividades-info-title">Lista de Actividades</div>
+      <div class="actividades-scroll">
+        <div class="actividades-list" *ngFor="let actividad of actividades">
+          <div class="actividades-item">
+            <span class="item-date"> 
+              <input type="text" class="item-input item-date" [(ngModel)]="actividad.hora" #data="ngModel" name="hora"/>
+              <input type="text" class="item-input item-date"[(ngModel)]="actividad.fecha " #data="ngModel" name="fecha"/>
+            </span> 
+            <span>
+              <input type="text"  class="item-input item-title" [(ngModel)]="actividad.actividad" #data="ngModel" name="actividad"/>
+            </span>      
+            <span class="item-buttons">
+                <button type="button" (click)="onUpdate(actividad)"> <span class="glyphicon glyphicon-upload"></span></button>
+                <button type="button" (click)="deleteActividad(actividad.id)"> <span class="glyphicon glyphicon-remove"></span></button>
+            </span>            
+          </div> 
+        </div>
+      </div>
+  </div>
+  <app-add-actividad></app-add-actividad>
+</div>
+
+

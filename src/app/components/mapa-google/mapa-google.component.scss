@@ -1,0 +1,103 @@
+agm-map {
+  height: 500px;
+}
+
+@media (max-height: 570px) { 
+  agm-map {
+    height: 300px;
+  } 
+}
+
+a {
+  color: #21354E;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.busqueda .form-control{
+ 
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+
+}
+.busqueda button{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.busqueda .form-control{
+  background: rgba($color: #ffffff, $alpha: 0.8);
+  width: 300px;
+  border-radius: 0;
+  outline: 0;
+  border-width: 0 0 2px;
+}
+input:focus {
+  border-color: #21354E;
+}
+.panel-mapa{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.tipo-map{
+  padding: 15px;
+  margin: 15px;
+}
+/* Bootstrap 3 text input with search icon */
+.has-search{
+  position: static;
+}
+.has-search .form-control-feedback {
+  right: initial;
+  left: 0;
+  color: #ccc;
+  
+}
+.btn{
+  background: rgba($color: #ffffff, $alpha: 0.8);
+  color:#21354E;
+  border-radius: 0;
+}
+.has-search .form-control {
+  padding-right: 12px;
+  padding-left: 34px;
+  
+}
+.input-group-btn {
+  position: static;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.boton-circular{
+  width:60px;
+  height:60px;
+  background-color:#21354E;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+  float:left;
+}
+.boton-circular span{
+  color: #ccc;
+
+}
+.boton:hover{
+  background-color:#BFCFDF;
+}
+.add-boton{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

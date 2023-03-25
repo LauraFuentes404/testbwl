@@ -1,0 +1,33 @@
+<div class="panel-mapa">
+  <agm-map 
+
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [mapTypeId]="mapType"
+  [disableDefaultUI]="false"
+  [zoomControl]="false"
+  >
+  <agm-marker 
+      [latitude]="lat"
+      [longitude]="lng"
+  >
+  </agm-marker>
+
+
+  </agm-map>
+  <div class="busqueda form-group has-feedback has-search">
+      <input type="text" class="form-control"  placeholder="Buscar" name="coordenada" id="coordenada" [(ngModel)]="coordenada">
+     
+          <button (click)="validarCordenada()" class="btn"> <span class="glyphicon glyphicon-search"></span></button> 
+  </div>
+ 
+  <div class="tipo-map text-center">
+    <a (click)="changeMap('roadmap')">Mapa</a>| <a (click)="changeMap('hybrid')">Tr&aacute;nsito</a> |<a (click)="changeMap('satellite')">Satelital</a>
+  </div>
+  <div class="add-boton">
+    <a routerLink="../dashboard"  class="boton-circular btn-xl btn btn-primary" id="button" type="button"  href="#modal-add-tarjeta" data-backdrop="false" data-toggle="modal">
+      <span class="glyphicon glyphicon-tasks"></span>
+    </a>
+  </div>
+</div>

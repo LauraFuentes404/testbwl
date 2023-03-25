@@ -1,0 +1,7 @@
+{
+  "name": "testBwlApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
